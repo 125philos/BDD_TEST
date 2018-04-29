@@ -14,4 +14,10 @@ Feature: Software Encryptor
     And I press 'Get encrypt'
     Then The result should be 100
 
+  Scenario:
+    Given I have my software encrypt
+    When I have entered B as first operand
+    And I press 'Get encrypt'
+    Then The result should be 1010
+
 
