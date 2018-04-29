@@ -10,6 +10,8 @@ public class ConEncr {
 	
 	public static final int SYMBOL = 6; //символ
 	public static final int A = 4; //символ
+	public static final int B = 10; //символ
+
     /**
      * Получить зашифрованный коэффициент из массива по его индексу
      * @param index наименование шифрованного значения, тип int
@@ -17,6 +19,7 @@ public class ConEncr {
      */
     public static double getValues(int index) {
         if(index == A) return 100;
+        else if(index == B) return 1010;
     	return 110;
     }
 }
