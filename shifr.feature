@@ -8,8 +8,9 @@ Feature: Software Encryptor
     And I press 'Get encrypt'
     Then The result should be 110
 	
-	Scenario:
+  Scenario:
     Given I have my software encrypt
     When I have entered A as first operand
     And I press 'Get encrypt'
     Then The result should be 100
+	
