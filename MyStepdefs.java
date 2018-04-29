@@ -11,6 +11,7 @@ public class MyStepdefs {
     
     private ConEncr encrypt;
     private int SYMBOL = encrypt.SYMBOL;
+	private int A = encrypt.A;
     private int operand1;
     private double result;
 
@@ -24,6 +25,11 @@ public class MyStepdefs {
         this.operand1 = SYMBOL;
     }
 
+	@When("^I have entered A as first operand$")
+    public void iHaveEnteredAsFirstOperandA() throws Throwable {
+        this.operand1 = A;
+    }
+	
     @And("^I press 'Get encrypt'$")
     public void iPressGetEncrypt() throws Throwable {
         this.result = encrypt.GetValue(operand1);
