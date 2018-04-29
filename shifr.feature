@@ -13,3 +13,5 @@ Feature: Software Encryptor
     When I have entered A as first operand
     And I press 'Get encrypt'
     Then The result should be 100
+
+
