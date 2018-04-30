@@ -14,6 +14,7 @@ public class MyStepdefs {
 	private int A = encrypt.A;
     private int B = encrypt.B;
     private int operand1;
+    private double operand2;
     private double result;
 
     @Given("^I have my software encrypt$")
@@ -26,6 +27,8 @@ public class MyStepdefs {
         this.operand1 = SYMBOL;
     }
 
+
+
 	@When("^I have entered A as first operand$")
     public void iHaveEnteredAsFirstOperandA() throws Throwable {
         this.operand1 = A;
@@ -35,10 +38,50 @@ public class MyStepdefs {
     public void iHaveEnteredAsFirstOperandB() throws Throwable {
         this.operand1 = B;
     }
+
+    @When("^I have entered C as first operand$")
+    public void iHaveEnteredAsFirstOperandC() throws Throwable {
+        this.operand1 = C;
+    }
+
+    @When("^I have entered D as first operand$")
+    public void iHaveEnteredAsFirstOperandD() throws Throwable {
+        this.operand1 = D;
+    }
+
+    @When("^I have entered E as first operand$")
+    public void iHaveEnteredAsFirstOperandE() throws Throwable {
+        this.operand1 = E;
+    }
+
+    @When("^I have entered G as first operand$")
+    public void iHaveEnteredAsFirstOperandG() throws Throwable {
+        this.operand1 = G;
+    }
+
+    @When("^I have entered J as first operand$")
+    public void iHaveEnteredAsFirstOperandJ() throws Throwable {
+        this.operand1 = J;
+    }
+
+    @When("^I have entered T as first operand$")
+    public void iHaveEnteredAsFirstOperandT() throws Throwable {
+        this.operand1 = T;
+    }
+
+    @And("^I have entered (\\d+) as second operand$")
+    public void iHaveEnteredAsSecondOperand(double number) throws Throwable {
+        this.operand2 = number;
+    }
 	
     @And("^I press 'Get encrypt'$")
     public void iPressGetEncrypt() throws Throwable {
         this.result = encrypt.GetValue(operand1);
+    }
+
+    @And("^I press 'Encrypt from key'$")
+    public void iPressEncryptFromKey() throws Throwable {
+        this.result = encrypt.encrFromKey(operand1, operand2);
     }
 
     @Then("^The result should be (\\d+)$")
