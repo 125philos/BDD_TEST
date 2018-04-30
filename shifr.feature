@@ -18,6 +18,40 @@ Feature: Software Encryptor
     Given I have my software encrypt
     When I have entered B as first operand
     And I press 'Get encrypt'
+    Then The result should be 101
+
+  Scenario:
+    Given I have my software encrypt
+    When I have entered C as first operand
+    And I press 'Get encrypt'
+    Then The result should be 110
+
+  Scenario:
+    Given I have my software encrypt
+    When I have entered D as first operand
+    And I press 'Get encrypt'
+    Then The result should be 111
+
+  Scenario:
+    Given I have my software encrypt
+    When I have entered E as first operand
+    And I press 'Get encrypt'
+    Then The result should be 1000
+
+  Scenario:
+    Given I have my software encrypt
+    When I have entered G as first operand
+    And I press 'Get encrypt'
     Then The result should be 1010
 
+  Scenario:
+    Given I have my software encrypt
+    When I have entered J as first operand
+    And I press 'Get encrypt'
+    Then The result should be 1011
 
+  Scenario:
+    Given I have my software encrypt
+    When I have entered T as first operand
+    And I press 'Get encrypt'
+    Then The result should be 1100
