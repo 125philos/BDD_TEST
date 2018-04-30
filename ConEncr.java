@@ -39,6 +39,7 @@ public class ConEncr {
 	public static double encrFromKey(int index, double key) {
 		// todo: add mult on numbet
 		if(key == 1101100) return 110110000;
+		else if(key == 100) return 10100;
 		return 1010100;
 	}
 
