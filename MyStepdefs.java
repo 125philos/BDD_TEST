@@ -10,9 +10,16 @@ import org.junit.Assert;
 public class MyStepdefs {
     
     private ConEncr encrypt;
+    private ConDescrypt descrypt;
     private int SYMBOL = encrypt.SYMBOL;
 	private int A = encrypt.A;
     private int B = encrypt.B;
+    private int C = encrypt.C;
+    private int D = encrypt.D;
+    private int E = encrypt.E;
+    private int G = encrypt.G;
+    private int J = encrypt.J;
+    private int T = encrypt.T;
     private int operand1;
     private double operand2;
     private double result;
@@ -26,8 +33,6 @@ public class MyStepdefs {
     public void iHaveEnteredAsFirstOperand() throws Throwable {
         this.operand1 = SYMBOL;
     }
-
-
 
 	@When("^I have entered A as first operand$")
     public void iHaveEnteredAsFirstOperandA() throws Throwable {
@@ -88,4 +93,23 @@ public class MyStepdefs {
     public void theResultShouldBe(int expected) throws Throwable {
         Assert.assertEquals(expected, this.result, 1e-5);
     }
+
+    @Given("^I have my software descrypt$")
+    public void iHaveMySoftwareDescrypt() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        this.descrypt = new ConDescrypt();
+    }
+
+    @When("^I have entered A as first operand$")
+    public void iHaveEnteredAsFirstOperandA() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @And("^I press 'Get descrypt'$")
+    public void iPressGetCoefficientLenght() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
 }
