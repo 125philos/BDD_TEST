@@ -20,6 +20,14 @@ public class MyStepdefs {
     private int G = encrypt.G;
     private int J = encrypt.J;
     private int T = encrypt.T;
+    private int AA = descrypt.A;
+    private int BB = descrypt.B;
+    private int CC = descrypt.C;
+    private int DD = descrypt.D;
+    private int EE = descrypt.E;
+    private int GG = descrypt.G;
+    private int JJ = descrypt.J;
+    private int TT = descrypt.T;
     private int operand1;
     private double operand2;
     private double result;
@@ -103,13 +111,13 @@ public class MyStepdefs {
     @When("^I have entered A as first operand$")
     public void iHaveEnteredAsFirstOperandA() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        this.operand1 = AA;
     }
 
     @And("^I press 'Get descrypt'$")
-    public void iPressGetCoefficientLenght() throws Throwable {
+    public void iPressGetDescrypt() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        this.result = descrypt.GetValueDes(operand1);
     }
 
 }
