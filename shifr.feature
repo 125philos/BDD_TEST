@@ -76,3 +76,9 @@ Feature: Software Encryptor
     And I have entered 100 as second operand
     And I press 'Encrypt from key'
     Then The result should be 10100
+
+  Scenario:
+    Given I have my software descrupt
+    When I have entered A as first operand
+    And I press 'Get descrypt'
+    Then The result should be 4
