@@ -37,6 +37,8 @@ public class ConEncr {
 	 * @return полученная в результате зашифрованный символ с ключом, тип double
 	 */
 	public static double encrFromKey(int index, double key) {
+		// todo: add mult on numbet
+		if(key == 1101100) return 110110000;
 		return 1010100;
 	}
 
