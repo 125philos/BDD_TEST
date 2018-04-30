@@ -55,3 +55,10 @@ Feature: Software Encryptor
     When I have entered T as first operand
     And I press 'Get encrypt'
     Then The result should be 1100
+
+  Scenario:
+    Given I have my software encrypt
+    When I have entered T as first operand
+    And I have entered 111 as second operand
+    And I press 'Encrypt from key'
+    Then The result should be 1010100
