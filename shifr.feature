@@ -62,3 +62,10 @@ Feature: Software Encryptor
     And I have entered 111 as second operand
     And I press 'Encrypt from key'
     Then The result should be 1010100
+
+  Scenario:
+    Given I have my software encrypt
+    When I have entered A as first operand
+    And I have entered 1101100 as second operand
+    And I press 'Encrypt from key'
+    Then The result should be 110110000
