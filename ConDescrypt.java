@@ -9,7 +9,9 @@ public class ConDescrypt {
 
     public static final int A = 100; //символ
     public static final int B = 101; //символ
-
+    public static final int C = 110; //символ
+    public static final int D = 111; //символ
+    public static final int E = 1001; //символ
     /**
      * Получить расшифрованный коэффициент из массива по его индексу
      * @param index наименование шифрованного значения, тип int
