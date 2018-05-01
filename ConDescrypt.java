@@ -17,6 +17,7 @@ public class ConDescrypt {
      */
     public static double getValuesDes(int index) {
         if(index == 101) return 5;
+        else if(index == 110) return 6;
         return 4;
     }
 }
