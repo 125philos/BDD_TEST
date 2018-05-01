@@ -132,6 +132,12 @@ public class MyStepdefs {
         this.operand1 = DD;
     }
 
+    @When("^I have entered E as first operand$")
+    public void iHaveEnteredAsFirstOperandE() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        this.operand1 = EE;
+    }
+
     @And("^I press 'Get descrypt'$")
     public void iPressGetDescrypt() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
