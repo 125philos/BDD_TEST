@@ -100,3 +100,9 @@ Feature: Software Encryptor
     When I have entered D as first operand
     And I press 'Get descrypt'
     Then The result should be 7
+
+  Scenario:
+    Given I have my software descrupt
+    When I have entered E as first operand
+    And I press 'Get descrypt'
+    Then The result should be 9
