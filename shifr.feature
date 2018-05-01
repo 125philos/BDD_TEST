@@ -88,3 +88,9 @@ Feature: Software Encryptor
     When I have entered B as first operand
     And I press 'Get descrypt'
     Then The result should be 5
+
+  Scenario:
+    Given I have my software descrupt
+    When I have entered C as first operand
+    And I press 'Get descrypt'
+    Then The result should be 6
