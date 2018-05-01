@@ -8,6 +8,7 @@ public class ConDescrypt {
     }
 
     public static final int A = 100; //символ
+    public static final int B = 101; //символ
 
     /**
      * Получить расшифрованный коэффициент из массива по его индексу
@@ -15,6 +16,7 @@ public class ConDescrypt {
      * @return коэффициент расшифрованого значения
      */
     public static double getValuesDes(int index) {
+        if(index == 101) return 5;
         return 4;
     }
 }
