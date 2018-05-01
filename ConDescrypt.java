@@ -19,6 +19,7 @@ public class ConDescrypt {
         if(index == 101) return 5;
         else if(index == 110) return 6;
         else if(index == 111) return 7;
+        else if(index == 1001) return 9;
         return 4;
     }
 }
